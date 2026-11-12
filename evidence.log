@@ -1,0 +1,36 @@
+No files changed, compilation skipped
+
+Ran 4 tests for test/KlimaFork.t.sol:KlimaForkTest
+[PASS] test_actualRetireBurnsReducedQuote() (gas: 4136264)
+Logs:
+  midnightIndex 267 -> warp to 268
+  fresh-day retire price 712329939301474146689
+  post-swap retire price  652387540721244138398
+  kVCM actually burned    652387540721244138398
+  under-burn vs fresh-day 59942398580230008291
+
+[PASS] test_noDiscountFactors_forwardSwapReverts() (gas: 1204510)
+Logs:
+  discountFactors today: 40 nonzero: 0
+
+[PASS] test_retireQuoteDropsAfterLiquidSwap_seededForwards() (gas: 3679126)
+Logs:
+  current midnightIndex 267 -> warping to 268
+  WIND credit liquid tonnes 117269493906989735332579
+  firstActiveMaturityId 3
+  after seed total 237735534536551619607390
+  after seed liquid 217735534536551619607390
+  after seed forward 20000000000000000000000
+  retire tonnes quoted 100000000000000000000
+  retire price BEFORE swap (kVCM) 712329939301474146689
+  DFB before stored 0
+  swap kvcmOut 6177144027737355814
+  DFB after stored 20000000000000000000000
+  retire price AFTER swap (kVCM)  652387540721244138398
+  under-burn (kVCM)                59942398580230008291
+  under-burn bps                   841
+
+[PASS] test_unprivilegedMintGuards() (gas: 97658)
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 14.21s (38.21s CPU time)
+
+Ran 1 test suite in 14.21s (14.21s CPU time): 4 tests passed, 0 failed, 0 skipped (4 total tests)
